@@ -1,0 +1,7 @@
+//for log real time.
+case 'stat':
+                checkauth();
+                $arr = runcmd('sudo tail -s 0.1 -n 60 /var/log/accel-ppp/accel-ppp.log | grep authentication');
+                echo json_encode ($arr);
+
+                break;
