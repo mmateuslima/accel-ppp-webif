@@ -1,4 +1,4 @@
-//for log real time.
+//for log real time, see just authentication failed or succeeded
 case 'stat':
                 checkauth();
                 $arr = runcmd('sudo tail -s 0.1 -n 60 /var/log/accel-ppp/accel-ppp.log | grep authentication');
